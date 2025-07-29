@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Call</title>
+</head>
+<body>
+    <button onclick="fetchData();">Fetch Data</button>
+    <script>
+        async function fetchData(){
+            let response = await fetch('/gethello');
+            if(response.ok){
+                    console.log(await response.text());
+                }else{
+                    console.log("Error: " + response.status);
+                }
+            }
+        
+    </script>
+</body>
+</html>
