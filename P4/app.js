@@ -8,3 +8,4 @@ fs.createReadStream('./myfile.txt')
 .pipe(fs.createWriteStream('./myfile.txt.gz'))
 
 readerStream.setEncoding('utf-8');
+console.log("zipping the file...");

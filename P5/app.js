@@ -8,3 +8,4 @@ fs.createReadStream('../P4/myfile.txt.gz')
 
 var readerStream = fs.createReadStream('./myfile1.txt')
 readerStream.setEncoding('utf-8');
+console.log("Unzipped file content:");
